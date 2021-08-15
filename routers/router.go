@@ -1,10 +1,10 @@
 package routers
 
 import (
-	"ihome/controllers"
-	beego "github.com/beego/beego/v2/server/web"
+	beego "github.com/astaxie/beego"
+	"snowy.space/ihome/controllers"
 )
 
 func init() {
-    beego.Router("/", &controllers.MainController{})
+	beego.Router("/", &controllers.MainController{})
 }
